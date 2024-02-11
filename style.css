@@ -1,0 +1,31 @@
+/* style.css */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f4f1ea;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background: #ccc;
+    color: #000;
+    text-align: center;
+}
+
+#inscriptions-list div {
+    background: #e2e2e2;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}

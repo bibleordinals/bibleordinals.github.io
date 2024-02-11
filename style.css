@@ -14,9 +14,13 @@ header, section, footer {
 }
 
 #header-logo, .section-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensures the image is no wider than its container */
+    max-height: 300px; /* Limits the maximum height of the image */
+    height: auto; /* Scales the height automatically to maintain aspect ratio */
     margin-bottom: 20px;
+    display: block; /* Displays the image as a block-level element */
+    margin-left: auto; /* Together with margin-right, centers the image horizontally */
+    margin-right: auto;
 }
 
 header {

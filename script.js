@@ -31,13 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add more inscriptions here
     ];
 
-    const inscriptionsList = document.getElementById('inscriptions-list');
+    const inscriptionsTable = document.getElementById('inscriptions-table');
 
     inscriptions.forEach(inscription => {
-        const div = document.createElement('div');
-        div.innerHTML = `<h3>${inscription.title}</h3>
-                         <p>ID: ${inscription.id}</p>
-                         <a href="${inscription.link}" target="_blank">View Inscription</a>`;
-        inscriptionsList.appendChild(div);
+        const row = inscriptionsTable.insertRow(-1); // Insert a new row at the end of the table
+        const titleCell = row.insertCell(0);
+        const idCell = row.insertCell(1);
+        const linkCell = row.insertCell(2);
+
+        titleCell.textContent = inscription.title;
+        idCell.textContent = inscription.id;
+        linkCell.innerHTML = `<a href="${inscription.link}" target="_blank">View</a>`;
     });
 });

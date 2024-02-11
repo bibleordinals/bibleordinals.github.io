@@ -10,18 +10,34 @@ body {
 
 header, section, footer {
     padding: 20px;
+    text-align: center;
+}
+
+#header-logo, .section-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 header {
     background: #ccc;
     color: #000;
-    text-align: center;
 }
 
-#inscriptions-list div {
-    background: #e2e2e2;
-    margin-bottom: 10px;
-    padding: 10px;
+#inscriptions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#inscriptions-table th, #inscriptions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#inscriptions-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 footer {

@@ -44,8 +44,23 @@ header {
     background-color: #f2f2f2;
 }
 
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
+}
+
+footer a {
+    color: #fff; /* Sets the link color to white */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 10px; /* Adds some spacing around the links */
+}
+
+footer a:hover {
+    color: #007bff; /* Change this to your preferred hover color */
+}
+
+.fab {
+    margin-right: 5px; /* Adds a small space between the icon and text */
 }
